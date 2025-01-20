@@ -6,7 +6,7 @@ function Hero() {
             <div className="w-full h-full">
                 <div className="absolute top-0 left-0 w-full h-[80%] bg-gradient-to-b from-teal-950 opacity-70"></div>
 
-                <video className='h-full w-full object-cover object-left md:object-center' src="./videos/water.mp4" autoPlay muted loop></video>
+                <video className='h-full w-full object-cover object-left md:object-center' src="./videos/water.mp4" autoPlay muted loop playsInline></video>
 
                 <div className="absolute top-[48%] md:top-[40%] left-3 w-full h-full">
                     <div className="max-w-[1400px] mx-auto">
