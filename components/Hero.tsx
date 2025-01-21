@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
     return (
-        <section className="relative w-full h-[84vh] overflow-hidden">
+        <section className="relative w-full lg:h-[84vh] h-[68vh] overflow-hidden">
             <div className="w-full h-full">
                 <div className="absolute top-0 left-0 w-full h-[80%] bg-gradient-to-b from-teal-950 opacity-70"></div>
 
