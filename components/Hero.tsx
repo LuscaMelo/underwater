@@ -33,6 +33,8 @@ function Hero() {
                     </div>
                 </div>
             </div>
+
+            <div className="absolute bottom-0 left-0 w-full h-[2px] bg-primary"></div>
         </section>
     )
 }
