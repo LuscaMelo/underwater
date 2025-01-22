@@ -7,7 +7,7 @@ import { motion } from "framer-motion";  // Importando o framer-motion
 
 function Packages() {
     const [selectedPackage, setSelectedPackage] = useState({
-        title: "Beginner's Dive Tour",
+        title: "Beginner's Dive",
         description:
             "Never dived before? No problem! Our Beginner's Dive is the perfect introduction to the underwater world. Guided by certified instructors, you'll learn the basics of diving and explore shallow, vibrant coral reefs teeming with marine life. This safe and fun experience is designed to help you feel confident and comfortable as you discover the magic beneath the waves.",
         duration: "2 hours",
