@@ -84,7 +84,7 @@ function Packages() {
                     {packages.map((pkg, index) => (
                         <div
                             key={index}
-                            className="relative min-w-[235px] p-3 border border-primary border-opacity-10 rounded-xl overflow-hidden cursor-pointer group"
+                            className="relative min-w-[245px] p-3 border border-primary border-opacity-10 rounded-xl overflow-hidden cursor-pointer group"
                             onClick={() => handlePackageSelect(pkg)} // Usando a função para selecionar o pacote
                         >
                             <div className="flex items-center gap-2">
