@@ -25,7 +25,7 @@ function Packages() {
             price: "$100",
         },
         {
-            title: "Underwater Photography",
+            title: "Underwater Photo",
             description:
                 "Capture the beauty of the ocean like never before with our Underwater Photography Tour. This experience is perfect for photography enthusiasts, whether you're a professional or just starting out. You'll visit some of the most stunning marine habitats, from colorful coral gardens to schools of tropical fish. Our guides will help you find the best angles and ensure you have plenty of time to frame the perfect shot.",
             duration: "3 hours",
@@ -84,7 +84,7 @@ function Packages() {
                     {packages.map((pkg, index) => (
                         <div
                             key={index}
-                            className="relative min-w-[270px] p-3 border border-primary border-opacity-10 rounded-xl overflow-hidden cursor-pointer group"
+                            className="relative min-w-[235px] p-3 border border-primary border-opacity-10 rounded-xl overflow-hidden cursor-pointer group"
                             onClick={() => handlePackageSelect(pkg)} // Usando a função para selecionar o pacote
                         >
                             <div className="flex items-center gap-2">
