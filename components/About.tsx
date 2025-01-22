@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function About() {
     return (
-        <section className="bg-primary text-white py-14 lg:py-20">
+        <section className="bg-primary text-white py-14 lg:py-20" id="teste">
             <div className="max-w-[1400px] mx-auto px-3">
                 <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 gap-14">
                     <div className="lg:w-[45%]">

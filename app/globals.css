@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+    scroll-margin-top: 70px;
+}
+
 body.overflow-hidden {
     overflow: hidden;
     position: fixed;

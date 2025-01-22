@@ -7,14 +7,21 @@ import Rating from "@/components/Rating";
 export default function Home() {
   return (
     <main>
-      <div className="mt-[-70px]">
+      <div className="mt-[-70px]" id="hero">
         <Hero />
       </div>
 
-      <About />
-      <Adventure />
-      <Rating />
-      <Packages />
+      <div id="about-us">
+        <About />
+        <Adventure />
+        <Rating />
+      </div>
+
+      <div id="packages">
+        <Packages />
+      </div>
+
+
 
     </main>
   );
