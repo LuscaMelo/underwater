@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Adventure from "@/components/Adventure";
 import Hero from "@/components/Hero";
+import Packages from "@/components/Packages";
 import Rating from "@/components/Rating";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <Adventure />
       <Rating />
+      <Packages />
 
     </main>
   );
