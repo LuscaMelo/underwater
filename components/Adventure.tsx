@@ -53,13 +53,17 @@ function Adventure() {
     return (
         <section className="bg-primary text-white pb-14 lg:pb-20">
             <div className="max-w-[1400px] mx-auto px-3">
-                <div className="flex gap-2 mb-5 items-center">
-                    <div className="h-12 lg:h-14 w-12 lg:w-14 p-2 bg-white bg-opacity-10 rounded-xl">
-                        <Image src={'/seaweed.png'} alt="Seaweed icon" height={50} width={50} quality={100} />
+                <div className="max-w-[750px]">
+                    <div className="flex gap-2 mb-5 items-center">
+                        <div className="h-12 lg:h-14 w-12 lg:w-14 p-2 bg-white bg-opacity-10 rounded-xl">
+                            <Image src={'/seaweed.png'} alt="Seaweed icon" height={50} width={50} quality={100} />
+                        </div>
+                        <h3 className="text-2xl lg:text-4xl font-bold mt-2 capitalize">
+                            Embark on this adventure
+                        </h3>
                     </div>
-                    <h3 className="text-2xl lg:text-4xl font-bold mt-2 capitalize">
-                        Embark with us on this adventure
-                    </h3>
+                    <p>Immerse yourself in an unforgettable journey beneath the waves. Whether {"you're"} an experienced diver or exploring the ocean for the first time, our adventures are designed to leave you breathless and in awe. Immerse yourself and create memories that will last a lifetime.
+                        See below some of our latest expeditions.</p>
                 </div>
 
                 <Swiper
@@ -129,6 +133,7 @@ function Adventure() {
                             height={800}
                             className="w-full h-full object-contain rounded-2xl pointer-events-none"
                             quality={100}
+                            priority
                         />
                     </div>
                 </div>
