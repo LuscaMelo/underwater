@@ -1,6 +1,6 @@
-'use client';
+'use client'
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -13,6 +13,7 @@ import { Swiper as SwiperType } from 'swiper/types';
 
 function Destination() {
     const swiperRef = useRef<SwiperType | null>(null);
+    const [activeSlide, setActiveSlide] = useState<number>(0);
 
     const destinations = [
         {
@@ -36,6 +37,9 @@ function Destination() {
             description: "A natural refuge where you can swim alongside sea turtles."
         },
     ];
+
+    const isFirstSlide = activeSlide === 0;
+    const isLastSlide = activeSlide === destinations.length - 1;
 
     return (
         <section className="bg-white text-gray-950 pb-14 lg:pb-20">
@@ -65,10 +69,10 @@ function Destination() {
                     modules={[Navigation, Pagination, Autoplay]}
                     spaceBetween={0}
                     slidesPerView={1}
-                    loop={true}
                     autoplay={{ delay: 4000, disableOnInteraction: true }}
                     pagination={{ clickable: true, el: '.custom-pagination' }}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
+                    onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)} // Atualiza o slide ativo
                     className="mt-10"
                 >
                     {destinations.map((destination, index) => (
@@ -84,7 +88,9 @@ function Destination() {
                                 ></video>
 
                                 {/* Hover Effect */}
-                                <div className="absolute top-0 left-0 px-8 w-full h-full bg-black bg-opacity-40 flex flex-col items-center justify-center text-white gap-4 lg:opacity-0 group-hover:opacity-100 duration-300">
+                                <div
+                                    className={`absolute top-0 left-0 px-8 w-full h-full bg-black bg-opacity-40 flex flex-col items-center justify-center text-white gap-4 ${activeSlide === index ? 'opacity-100' : 'opacity-0'} duration-300`}
+                                >
                                     <h5 className="text-5xl lg:text-7xl font-black text-center">{destination.title}</h5>
                                     <p className="text-xl text-center">{destination.description}</p>
                                 </div>
@@ -97,7 +103,8 @@ function Destination() {
                     <div className="flex justify-center items-center gap-2 w-full lg:w-auto">
                         <button
                             onClick={() => swiperRef.current?.slidePrev()}
-                            className="text-primary text-3xl hover:bg-primary hover:text-white p-1 lg:rounded-full duration-300 hidden lg:block"
+                            disabled={isFirstSlide}
+                            className={`text-primary text-3xl hover:bg-primary hover:text-white p-1 lg:rounded-full duration-300 hidden lg:block ${isFirstSlide ? 'opacity-50 cursor-not-allowed' : ''}`}
                         >
                             <GrFormPrevious />
                         </button>
@@ -108,13 +115,15 @@ function Destination() {
                         <div className="flex gap-2">
                             <button
                                 onClick={() => swiperRef.current?.slidePrev()}
-                                className="lg:text-primary border border-primary bg-primary lg:bg-transparent hover:bg-primary text text-white text-xl py-2 px-3 rounded-lg lg:rounded-full lg:hidden duration-300"
+                                disabled={isFirstSlide}
+                                className={`lg:text-primary border border-primary bg-primary lg:bg-transparent hover:bg-primary text text-white text-xl py-2 px-3 rounded-lg lg:rounded-full lg:hidden duration-300 ${isFirstSlide ? 'opacity-50 cursor-not-allowed' : ''}`}
                             >
                                 <GrFormPrevious />
                             </button>
                             <button
                                 onClick={() => swiperRef.current?.slideNext()}
-                                className="lg:text-primary border lg:border-0 border-primary bg-primary lg:bg-transparent hover:bg-primary text-white text-xl py-2 px-3 rounded-lg lg:rounded-full duration-300"
+                                disabled={isLastSlide}
+                                className={`lg:text-primary border lg:border-0 border-primary bg-primary lg:bg-transparent hover:bg-primary text-white text-xl py-2 px-3 rounded-lg lg:rounded-full duration-300 ${isLastSlide ? 'opacity-50 cursor-not-allowed' : ''}`}
                             >
                                 <GrFormNext />
                             </button>
