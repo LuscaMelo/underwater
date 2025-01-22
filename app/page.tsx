@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Adventure from "@/components/Adventure";
+import Destination from "@/components/Destination";
 import Hero from "@/components/Hero";
 import Packages from "@/components/Packages";
 import Rating from "@/components/Rating";
@@ -21,7 +22,9 @@ export default function Home() {
         <Packages />
       </div>
 
-
+      <div id="destination">
+        <Destination />
+      </div>
 
     </main>
   );
