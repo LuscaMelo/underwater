@@ -42,7 +42,7 @@ function Destination() {
     const isLastSlide = activeSlide === destinations.length - 1;
 
     return (
-        <section className="bg-white text-gray-950 pb-14 lg:pb-20">
+        <section className="bg-gray-50 text-gray-950 py-14 lg:pt-20">
             <div className="max-w-[1400px] mx-auto lg:px-3">
                 <div className="max-w-[750px] px-3 lg:px-0">
                     <div className="flex gap-2 mb-5 items-center">

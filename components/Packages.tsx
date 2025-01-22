@@ -115,7 +115,7 @@ function Packages() {
                 {/* Dynamic Content with Animation */}
                 <motion.div
                     key={animateKey}
-                    className="bg-primary bg-opacity-10 rounded-lg mt-3 p-8 max-w-[780px] md:h-[350px]"
+                    className="bg-primary bg-opacity-10 rounded-lg mt-5 p-8 max-w-[780px] md:h-[350px]"
                     initial={{ opacity: 0, x: -500 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
