@@ -13,8 +13,40 @@ import { BiSolidQuoteAltRight } from "react-icons/bi";
 
 function Testimonials() {
 
+    const testimonials = [
+        {
+            id: 1,
+            image: "/user-1.jpg",
+            quote: "Our family snorkeling trip was perfect. Safe, fun, and full of amazing memories!",
+            name: "Michael K.",
+            location: "United States"
+        },
+        {
+            id: 2,
+            image: "/user-2.jpg",
+            quote: "An unforgettable experience! The coral reefs were breathtaking, and the team was so professional.",
+            name: "Emma L.",
+            location: "United States"
+        },
+        {
+            id: 3,
+            image: "/user-3.jpg",
+            quote: "The shipwreck dive was like stepping back in time. Absolutely loved it!",
+            name: "Carlos T.",
+            location: "Spain"
+        },
+        {
+            id: 4,
+            image: "/user-4.jpg",
+            quote: "The underwater photography tour was beyond my expectations. Highly recommended!",
+            name: "Sarah M.",
+            location: "Canada"
+        },
+    ];
+
+
     return (
-        <section className="bg-white text-gray-950 py-14 lg:py-20">
+        <section className="bg-primary bg-opacity-20 text-gray-950 py-14 lg:py-20">
             <div className="max-w-[1400px] mx-auto px-3">
                 <div className="relative w-full">
 
@@ -33,7 +65,7 @@ function Testimonials() {
                                         />
                                     </div>
                                     <h3 className="text-2xl lg:text-4xl font-bold mt-2 capitalize">
-                                        what people say
+                                        What Our Guests Say
                                     </h3>
                                 </div>
                                 <p>
@@ -55,116 +87,31 @@ function Testimonials() {
                                     1280: { slidesPerView: 3 },
                                 }}
                                 modules={[Navigation]}
-                                className=""
                             >
-                                <SwiperSlide className="rounded-2xl overflow-hidden cursor-pointer">
-                                    <div className="p-5 bg-gray-50 rounded-2xl">
-                                        <div className="w-full flex justify-between mb-5">
-                                            <Image
-                                                src={"/user-1.jpg"}
-                                                alt="User icon"
-                                                className="rounded-full"
-                                                height={80}
-                                                width={80}
-                                                quality={100}
-                                            />
-
-                                            <div className="text-3xl text-primary">
-                                                <BiSolidQuoteAltRight />
+                                {testimonials.map(({ id, image, quote, name, location }) => (
+                                    <SwiperSlide key={id} className="rounded-2xl overflow-hidden cursor-pointer">
+                                        <div className="p-5 bg-gray-50 rounded-2xl flex flex-col justify-between min-h-[250px] lg:min-h-[300px]">
+                                            <div className="w-full flex justify-between mb-5">
+                                                <Image
+                                                    src={image}
+                                                    alt={`${name} icon`}
+                                                    className="rounded-full"
+                                                    height={80}
+                                                    width={80}
+                                                    quality={100}
+                                                />
+                                                <div className="text-3xl text-primary">
+                                                    <BiSolidQuoteAltRight />
+                                                </div>
+                                            </div>
+                                            <p className="text-sm text-gray-800 flex-grow">{quote}</p>
+                                            <div className="flex justify-between items-center mt-3 pt-3 border-t border-gray-200">
+                                                <h5 className="font-bold">{name}</h5>
+                                                <span className="font-light text-xs">{location}</span>
                                             </div>
                                         </div>
-
-                                        <p className="text-sm text-gray-800">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iste voluptatem nisi nobis, a ex molestiae consectetur
-                                        </p>
-                                        <div className="mt-3 pt-3 border-t border-gray-200">
-                                            <h5 className="font-bold">Michael</h5>
-                                            <span className="font-light text-xs">United States</span>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide className="h-[250px] lg:h-[400px] rounded-2xl overflow-hidden cursor-pointer">
-                                    <div className="p-5 bg-gray-50 rounded-2xl">
-                                        <div className="w-full flex justify-between mb-5">
-                                            <Image
-                                                src={"/user-1.jpg"}
-                                                alt="User icon"
-                                                className="rounded-full"
-                                                height={80}
-                                                width={80}
-                                                quality={100}
-                                            />
-
-                                            <div className="text-3xl text-primary">
-                                                <BiSolidQuoteAltRight />
-                                            </div>
-                                        </div>
-
-                                        <p className="text-sm text-gray-800">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iste voluptatem nisi nobis, a ex molestiae consectetur
-                                        </p>
-                                        <div className="mt-3 pt-3 border-t border-gray-200">
-                                            <h5 className="font-bold">Michael</h5>
-                                            <span className="font-light text-xs">United States</span>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide className="h-[250px] lg:h-[400px] rounded-2xl overflow-hidden cursor-pointer">
-                                    <div className="p-5 bg-gray-50 rounded-2xl">
-                                        <div className="w-full flex justify-between mb-5">
-                                            <Image
-                                                src={"/user-1.jpg"}
-                                                alt="User icon"
-                                                className="rounded-full"
-                                                height={80}
-                                                width={80}
-                                                quality={100}
-                                            />
-
-                                            <div className="text-3xl text-primary">
-                                                <BiSolidQuoteAltRight />
-                                            </div>
-                                        </div>
-
-                                        <p className="text-sm text-gray-800">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iste voluptatem nisi nobis, a ex molestiae consectetur
-                                        </p>
-                                        <div className="mt-3 pt-3 border-t border-gray-200">
-                                            <h5 className="font-bold">Michael</h5>
-                                            <span className="font-light text-xs">United States</span>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
-                                <SwiperSlide className="h-[250px] lg:h-[400px] rounded-2xl overflow-hidden cursor-pointer">
-                                    <div className="p-5 bg-gray-50 rounded-2xl">
-                                        <div className="w-full flex justify-between mb-5">
-                                            <Image
-                                                src={"/user-1.jpg"}
-                                                alt="User icon"
-                                                className="rounded-full"
-                                                height={80}
-                                                width={80}
-                                                quality={100}
-                                            />
-
-                                            <div className="text-3xl text-primary">
-                                                <BiSolidQuoteAltRight />
-                                            </div>
-                                        </div>
-
-                                        <p className="text-sm text-gray-800">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iste voluptatem nisi nobis, a ex molestiae consectetur
-                                        </p>
-                                        <div className="mt-3 pt-3 border-t border-gray-200">
-                                            <h5 className="font-bold">Michael</h5>
-                                            <span className="font-light text-xs">United States</span>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-
+                                    </SwiperSlide>
+                                ))}
                             </Swiper>
 
                             {/* Custom Navigation Buttons */}
@@ -177,6 +124,7 @@ function Testimonials() {
                                 </button>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
