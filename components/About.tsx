@@ -16,8 +16,8 @@ function About() {
                                 </div>
                                 <h3 className="text-2xl lg:text-4xl font-bold mt-2 capitalize">Who we are</h3>
                             </div>
-                            <p>We are a passionate team of ocean lovers dedicated to creating unforgettable underwater experiences. Founded with a mission to connect people with the wonders of the sea, our company offers unique and safe diving adventures for all skill levels.</p>
-                            <p>Our vision is to inspire a deeper appreciation for marine life while promoting sustainable tourism practices that protect our oceans for generations to come.</p>
+                            <p className='xl:text-lg'>We are a passionate team of ocean lovers dedicated to creating unforgettable underwater experiences. Founded with a mission to connect people with the wonders of the sea, our company offers unique and safe diving adventures for all skill levels.</p>
+                            <p className='xl:text-lg'>Our vision is to inspire a deeper appreciation for marine life while promoting sustainable tourism practices that protect our oceans for generations to come.</p>
                             <button className="px-5 lg:px-10 py-3 bg-transparent border border-white font-bold text-sm md:text-md hover:bg-white hover:text-primary text-white duration-200 rounded-full uppercase mt-7">
                                 schedule tour
                             </button>

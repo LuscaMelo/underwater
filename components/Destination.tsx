@@ -60,7 +60,7 @@ function Destination() {
                             Dream Destinations
                         </h3>
                     </div>
-                    <p>
+                    <p className='lx:text-lg'>
                         Embark on a journey to some of the most breathtaking underwater locations. From vibrant coral reefs to mysterious shipwrecks, each destination offers a unique adventure waiting to be discovered. Dive into the wonders of the ocean and uncover hidden treasures beneath the surface.
                     </p>
                 </div>

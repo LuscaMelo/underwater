@@ -62,7 +62,7 @@ function Adventure() {
                             Embark on this adventure
                         </h3>
                     </div>
-                    <p>Immerse yourself in an unforgettable journey beneath the waves. Whether {"you're"} an experienced diver or exploring the ocean for the first time, our adventures are designed to leave you breathless and in awe. Immerse yourself and create memories that will last a lifetime.
+                    <p className='xl:text-lg'>Immerse yourself in an unforgettable journey beneath the waves. Whether {"you're"} an experienced diver or exploring the ocean for the first time, our adventures are designed to leave you breathless and in awe. Immerse yourself and create memories that will last a lifetime.
                         See below some of our latest expeditions.</p>
                 </div>
 

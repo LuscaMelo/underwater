@@ -75,7 +75,7 @@ function Packages() {
                             Choose Your Adventure
                         </h3>
                     </div>
-                    <p>
+                    <p className='xl:text-lg'>
                         Discover a variety of underwater experiences tailored for every
                         explorer. From beginners to seasoned divers, our packages are
                         designed to make your journey unforgettable.
@@ -133,7 +133,7 @@ function Packages() {
                                     Price: {selectedPackage.price}
                                 </p>
                             </div>
-                            <p className="text-gray-500 my-5">{selectedPackage.description}</p>
+                            <p className="text-gray-600 my-5">{selectedPackage.description}</p>
                         </div>
                         <button className="px-5 lg:px-10 py-3 bg-primary border border-primary font-bold text-sm md:text-md hover:brightness-[118%] text-white duration-200 rounded-full uppercase">
                             Schedule now

@@ -3,7 +3,7 @@ import Image from "next/image";
 function CallToAction() {
     return (
         <section className="relative bg-primary text-white pb-14 overflow-x-hidden overflow-y-visible">
-            <div className="max-w-[1400px] mx-auto px-5 relative mt-[-40px]">
+            <div className="max-w-[1400px] mx-auto px-5 relative">
                 {/* Imagem */}
                 <div className="w-full flex justify-center">
                     <Image
