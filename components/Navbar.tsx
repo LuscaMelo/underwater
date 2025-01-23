@@ -72,7 +72,7 @@ function Navbar() {
                         </ul>
                     </nav>
 
-                    <button className={`px-5 py-1 bg-transparent border font-medium duration-200 rounded-full uppercase ${scrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-black'}`}>
+                    <button className={`px-5 py-1 bg-transparent border font-medium duration-200 rounded-full uppercase text-sm ${scrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-dark'}`}>
                         Call Us
                     </button>
                 </div>
@@ -80,7 +80,7 @@ function Navbar() {
                 <div className={`lg:hidden ${menuOpen ? 'hidden' : ''}`}>
                     <button
                         onClick={handleMenu}
-                        className={`px-2 py-1 text-2xl bg-transparent border font-medium duration-200 rounded-xl ${scrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-black'}`}>
+                        className={`px-2 py-1 text-2xl bg-transparent border font-medium duration-200 rounded-xl ${scrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-dark'}`}>
                         <IoMdMenu />
                     </button>
                 </div>

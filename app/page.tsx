@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Adventure from "@/components/Adventure";
+import CallToAction from "@/components/CallToAction";
 import Destination from "@/components/Destination";
 import Hero from "@/components/Hero";
 import Packages from "@/components/Packages";
@@ -29,6 +30,10 @@ export default function Home() {
 
       <div id="testimonials">
         <Testimonials />
+      </div>
+
+      <div id="call-to-action">
+        <CallToAction />
       </div>
 
     </main>
