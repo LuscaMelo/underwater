@@ -53,6 +53,7 @@ function Destination() {
                                 height={50}
                                 width={50}
                                 quality={100}
+                                priority={true}
                             />
                         </div>
                         <h3 className="text-2xl lg:text-4xl font-bold mt-2 capitalize">

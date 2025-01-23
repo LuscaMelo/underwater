@@ -62,6 +62,7 @@ function Testimonials() {
                                             height={50}
                                             width={50}
                                             quality={100}
+                                            priority={true}
                                         />
                                     </div>
                                     <h3 className="text-2xl lg:text-4xl font-bold mt-2 capitalize">
@@ -69,7 +70,7 @@ function Testimonials() {
                                     </h3>
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, quia cupiditate? Deleniti aliquam est temporibus, facilis fuga, nam officiis suscipit numquam tempora commodi
+                                    Discover how our tours create unforgettable memories for our guests. From breathtaking underwater adventures to personalized experiences with complete safety, our team is dedicated to delivering unique and special moments for every visitor.
                                 </p>
                             </div>
                         </div>
@@ -99,6 +100,7 @@ function Testimonials() {
                                                     height={80}
                                                     width={80}
                                                     quality={100}
+                                                    priority={true}
                                                 />
                                                 <div className="text-3xl text-primary">
                                                     <BiSolidQuoteAltRight />
