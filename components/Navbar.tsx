@@ -7,7 +7,7 @@ import { IoMdMenu } from 'react-icons/io'
 import { IoClose } from 'react-icons/io5'
 
 function Navbar() {
-    const navLinks = ['Home', 'About Us', 'Packages', 'Destination']
+    const navLinks = ['Home', 'About Us', 'Packages', 'Destination', 'Testimonials']
     const [menuOpen, setMenuOpen] = useState(false)
     const [scrolled, setScrolled] = useState(false)
 
