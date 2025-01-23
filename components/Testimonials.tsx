@@ -90,7 +90,7 @@ function Testimonials() {
                                 modules={[Navigation]}
                             >
                                 {testimonials.map(({ id, image, quote, name, location }) => (
-                                    <SwiperSlide key={id} className="rounded-2xl overflow-hidden cursor-pointer">
+                                    <SwiperSlide key={id} className="rounded-2xl overflow-hidden">
                                         <div className="p-5 bg-gray-50 rounded-2xl flex flex-col justify-between min-h-[250px] lg:min-h-[300px]">
                                             <div className="w-full flex justify-between mb-5">
                                                 <Image

@@ -117,14 +117,14 @@ function Destination() {
                             <button
                                 onClick={() => swiperRef.current?.slidePrev()}
                                 disabled={isFirstSlide}
-                                className={`lg:text-primary border border-primary bg-primary lg:bg-transparent hover:bg-primary text text-white text-xl py-2 px-3 rounded-lg lg:rounded-full lg:hidden duration-300 ${isFirstSlide ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                className={`lg:text-primary border border-primary bg-primary lg:bg-transparent hover:bg-primary text text-white text-xl py-2 px-3 rounded-lg lg:rounded-full lg:hidden duration-300 ${isFirstSlide ? 'opacity-50' : ''}`}
                             >
                                 <GrFormPrevious />
                             </button>
                             <button
                                 onClick={() => swiperRef.current?.slideNext()}
                                 disabled={isLastSlide}
-                                className={`lg:text-primary border lg:border-0 border-primary bg-primary lg:bg-transparent hover:bg-primary hover:text-white lg:text-3xl text-white text-xl py-2 px-3 lg:p-1 rounded-lg lg:rounded-full duration-300 ${isLastSlide ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                className={`lg:text-primary border lg:border-0 border-primary bg-primary lg:bg-transparent hover:bg-primary hover:text-white lg:text-3xl text-white text-xl py-2 px-3 lg:p-1 rounded-lg lg:rounded-full duration-300 ${isLastSlide ? 'opacity-50' : ''}`}
                             >
                                 <GrFormNext />
                             </button>
