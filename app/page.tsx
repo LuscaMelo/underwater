@@ -4,6 +4,7 @@ import Destination from "@/components/Destination";
 import Hero from "@/components/Hero";
 import Packages from "@/components/Packages";
 import Rating from "@/components/Rating";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -24,6 +25,10 @@ export default function Home() {
 
       <div id="destination">
         <Destination />
+      </div>
+
+      <div id="testimonials">
+        <Testimonials />
       </div>
 
     </main>

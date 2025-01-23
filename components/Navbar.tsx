@@ -48,7 +48,7 @@ function Navbar() {
     }, [])
 
     return (
-        <div className={`sticky top-0 w-full z-[99] duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
+        <div className={`sticky top-0 w-full z-[99] duration-300 ${scrolled ? 'bg-white shadow-lg shadow-[#00000007]' : 'bg-transparent'}`}>
             <div className='max-w-[1400px] mx-auto px-3 h-[70px] flex items-center justify-between'>
                 <Link href='/'>
                     <Image className={`brightness-[10000%] ${scrolled ? 'filter-none' : ''}`} src='./logoipsum.svg' alt='Underwater logo' width={150} height={40} quality={100} />
@@ -72,7 +72,7 @@ function Navbar() {
                         </ul>
                     </nav>
 
-                    <button className={`px-5 py-1 bg-transparent border font-medium duration-200 rounded-full ${scrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-black'}`}>
+                    <button className={`px-5 py-1 bg-transparent border font-medium duration-200 rounded-full uppercase ${scrolled ? 'border-primary text-primary hover:bg-primary hover:text-white' : 'border-white text-white hover:bg-white hover:text-black'}`}>
                         Call Us
                     </button>
                 </div>
