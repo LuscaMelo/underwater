@@ -29,7 +29,7 @@ function CallToAction() {
                         <button className="px-6 lg:px-12 py-3 bg-white border border-white text-primary font-bold text-sm md:text-md hover:bg-cyan-900 hover:border-cyan-900 hover:text-white duration-200 rounded-full uppercase">
                             Book Your Tour
                         </button>
-                        <button className="px-6 lg:px-12 py-3 bg-transparent border border-white font-bold text-sm md:text-md hover:bg-white text-white hover:text-primary duration-200 rounded-full uppercase">
+                        <button className="px-6 lg:px-12 py-3 bg-transparent border border-white font-bold text-sm md:text-md hover:brightness-[118%] hover:border-opacity-0 text-white hover:bg-primary duration-200 rounded-full uppercase">
                             Contact Us
                         </button>
                     </div>

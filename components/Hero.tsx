@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -22,9 +23,11 @@ function Hero() {
                                 Sail with us and discover all the underwater wonders
                             </h1>
                             <div className="flex gap-3 mt-7 lg:w-full">
-                                <button className="px-5 lg:px-10 py-3 bg-primary border border-primary font-bold text-sm md:text-md hover:brightness-[118%] text-white duration-200 rounded-full uppercase">
-                                    Find out more
-                                </button>
+                                <Link href={'#call-to-action'}>
+                                    <button className="px-5 lg:px-10 py-3 bg-primary border border-primary font-bold text-sm md:text-md hover:brightness-[118%] text-white duration-200 rounded-full uppercase">
+                                        Find out more
+                                    </button>
+                                </Link>
                                 <button className="px-5 lg:px-10 py-3 bg-transparent border border-white font-bold text-sm md:text-md hover:bg-white text-white hover:text-dark duration-200 rounded-full uppercase">
                                     Call us
                                 </button>

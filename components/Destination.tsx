@@ -60,7 +60,7 @@ function Destination() {
                             Dream Destinations
                         </h3>
                     </div>
-                    <p className='lx:text-lg'>
+                    <p className='xl:text-lg'>
                         Embark on a journey to some of the most breathtaking underwater locations. From vibrant coral reefs to mysterious shipwrecks, each destination offers a unique adventure waiting to be discovered. Dive into the wonders of the ocean and uncover hidden treasures beneath the surface.
                     </p>
                 </div>
@@ -105,7 +105,7 @@ function Destination() {
                         <button
                             onClick={() => swiperRef.current?.slidePrev()}
                             disabled={isFirstSlide}
-                            className={`text-primary text-3xl hover:bg-primary hover:text-white p-1 lg:rounded-full duration-300 hidden lg:block ${isFirstSlide ? 'opacity-50 cursor-not-allowed' : ''}`}
+                            className={`text-primary text-3xl hover:bg-primary hover:text-white p-1 lg:rounded-full duration-300 hidden lg:block ${isFirstSlide ? 'opacity-50' : ''}`}
                         >
                             <GrFormPrevious />
                         </button>
