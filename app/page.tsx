@@ -25,15 +25,10 @@ export default function Home() {
       </div>
 
       <div id="about-us" className="bg-primary">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.5 }}
-          variants={fadeIn}
-        >
+        <div>
           <About />
-        </motion.div>
+        </div>
+
         <motion.div
           initial="hidden"
           whileInView="visible"
