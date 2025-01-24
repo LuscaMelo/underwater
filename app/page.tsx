@@ -29,15 +29,10 @@ export default function Home() {
           <About />
         </div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          variants={fadeIn}
-        >
+        <div>
           <Adventure />
-        </motion.div>
+        </div>
+
         <motion.div
           initial="hidden"
           whileInView="visible"
