@@ -4,7 +4,8 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { IoMdMenu } from 'react-icons/io'
-import { IoClose } from 'react-icons/io5'
+import { IoChevronForwardSharp, IoClose } from 'react-icons/io5'
+import { FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa'
 
 function Navbar() {
     const navLinks = ['Home', 'About Us', 'Packages', 'Destination', 'Testimonials']
@@ -87,33 +88,50 @@ function Navbar() {
             </div>
 
             {/* Menu para dispositivos móveis */}
-            <div
-                className={`${menuOpen ? 'left-0 md:right-0' : 'left-[-100vw] md:right-[-100vw]'} absolute flex items-center justify-center top-0 duration-300 w-screen md:w-[50%] max-h-[100vh] h-screen bg-primary overflow-hidden lg:hidden z-[50]`}>
-                <button
-                    onClick={handleMenu}
-                    className='absolute top-3 right-3 text-3xl text-white'>
-                    <IoClose />
-                </button>
+            <div className={`${menuOpen ? 'left-0 md:right-0' : 'left-[-100vw] md:right-[-100vw]'} absolute top-0 duration-300 w-screen md:w-[50%] max-h-[100vh] h-screen bg-primary p-5 overflow-hidden lg:hidden z-[50]`}>
+                <div className="flex items-center justify-between border-b border-white border-opacity-20 pb-5">
+                    <Link className='brightness-[1000000]' href='/'>
+                        <Image src='./logoipsum.svg' alt='Underwater logo' width={150} height={40} quality={100} />
+                    </Link>
+                    <button
+                        onClick={handleMenu}
+                        className='text-2xl text-cyan-900 bg-light bg-opacity-40 text-opacity-70 p-1 rounded-xl hover:brightness-110'>
+                        <IoClose />
+                    </button>
+                </div>
 
-                <nav>
-                    <ul className='flex flex-col gap-5 text-center pb-28'>
-                        <Link className='mb-8' href='/'>
-                            <Image className='brightness-[10000%]' src='./logoipsum.svg' alt='Underwater logo' width={180} height={40} quality={100} />
-                        </Link>
-                        {navLinks.map((link, index) => {
-                            const linkId = link.toLowerCase().replace(/\s+/g, '-');
-                            return (
-                                <li key={index}>
-                                    <Link href={`#${linkId}`} onClick={handleLinkClick}>
-                                        <span className='font-medium text-2xl text-white border-b-2 border-transparent hover:border-primary duration-300 hover:text-dark'>
-                                            {link}
-                                        </span>
-                                    </Link>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </nav>
+                <div className="flex flex-col justify-between h-[82%]">
+                    <nav>
+                        <ul className='flex flex-col gap-4 mt-14'>
+                            {navLinks.map((link, index) => {
+                                const linkId = link.toLowerCase().replace(/\s+/g, '-');
+                                return (
+                                    <li key={index}>
+                                        <Link className='flex items-center justify-between' href={`#${linkId}`} onClick={handleLinkClick}>
+                                            <span className='font-medium text-2xl text-white border-b-2 border-transparent duration-300 hover:text-cyan-900'>
+                                                {link}
+                                            </span>
+                                            <div className="text-xl text-white text-opacity-50">
+                                                <IoChevronForwardSharp />
+                                            </div>
+                                        </Link>
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </nav>
+                    <div className="flex gap-3 w-full justify-center">
+                        <div className="p-3 bg-cyan-800 bg-opacity-80 text-xl text-white rounded-full cursor-pointer hover:brightness-110 duration-300">
+                            <FaInstagram />
+                        </div>
+                        <div className="p-3 bg-cyan-800 bg-opacity-80 text-xl text-white rounded-full cursor-pointer hover:brightness-110 duration-300">
+                            <FaLinkedin />
+                        </div>
+                        <div className="p-3 bg-cyan-800 bg-opacity-80 text-xl text-white rounded-full cursor-pointer hover:brightness-110 duration-300">
+                            <FaTiktok />
+                        </div>
+                    </div>
+                </div>
             </div>
 
             {/* Overlay */}

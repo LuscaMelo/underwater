@@ -117,7 +117,7 @@ function Packages() {
                 {/* Dynamic Content with Animation */}
                 <motion.div
                     key={animateKey}
-                    className="flex bg-primary bg-opacity-20 rounded-lg mt-5 overflow-hidden md:h-[400px]"
+                    className="flex bg-light rounded-lg mt-5 overflow-hidden md:h-[400px]"
                     initial={{ opacity: 0, x: -500 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}

@@ -46,7 +46,7 @@ function Testimonials() {
 
 
     return (
-        <section className="bg-primary bg-opacity-20 text-gray-950 py-14 lg:py-20">
+        <section className="bg-light text-gray-950 py-14 lg:py-20">
             <div className="max-w-[1400px] mx-auto px-3">
                 <div className="relative w-full">
 
