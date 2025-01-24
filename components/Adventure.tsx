@@ -94,6 +94,7 @@ function Adventure() {
                                 height={700}
                                 className="w-full h-full object-cover"
                                 quality={100}
+                                priority={true}
                             />
                         </SwiperSlide>
                     ))}
@@ -133,7 +134,7 @@ function Adventure() {
                             height={800}
                             className="w-full h-full object-contain rounded-2xl pointer-events-none"
                             quality={100}
-                            priority
+                            priority={true}
                         />
                     </div>
                 </div>
