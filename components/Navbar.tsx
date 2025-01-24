@@ -88,9 +88,9 @@ function Navbar() {
             </div>
 
             {/* Menu para dispositivos móveis */}
-            <div className={`${menuOpen ? 'left-0 md:right-0' : 'left-[-100vw] md:right-[-100vw]'} absolute top-0 duration-300 w-screen md:w-[50%] max-h-[100vh] h-screen bg-primary p-5 overflow-hidden lg:hidden z-[50]`}>
-                <div className="flex items-center justify-between border-b border-white border-opacity-20 pb-5">
-                    <Link className='brightness-[1000000]' href='/'>
+            <div className={`${menuOpen ? 'left-0 md:right-0' : 'left-[-100vw] md:right-[-100vw]'} absolute top-0 duration-300 w-screen md:w-[50%] max-h-[100vh] h-screen bg-white p-5 overflow-hidden lg:hidden z-[50]`}>
+                <div className="flex items-center justify-between border-b border-light border-opacity-40 pb-5">
+                    <Link className='' href='/'>
                         <Image src='./logoipsum.svg' alt='Underwater logo' width={150} height={40} quality={100} />
                     </Link>
                     <button
@@ -100,7 +100,7 @@ function Navbar() {
                     </button>
                 </div>
 
-                <div className="flex flex-col justify-between h-[82%]">
+                <div className="flex flex-col justify-between h-[80%]">
                     <nav>
                         <ul className='flex flex-col gap-4 mt-14'>
                             {navLinks.map((link, index) => {
@@ -108,19 +108,24 @@ function Navbar() {
                                 return (
                                     <li key={index}>
                                         <Link className='flex items-center justify-between' href={`#${linkId}`} onClick={handleLinkClick}>
-                                            <span className='font-medium text-2xl text-white border-b-2 border-transparent duration-300 hover:text-cyan-900'>
+                                            <span className='font-medium text-2xl text-gray-600 border-b-2 border-transparent duration-300 hover:text-cyan-900'>
                                                 {link}
                                             </span>
-                                            <div className="text-xl text-white text-opacity-50">
+                                            <div className="text-xl text-primary text-opacity-40">
                                                 <IoChevronForwardSharp />
                                             </div>
                                         </Link>
                                     </li>
                                 );
                             })}
+                            <li>
+                                <button className={`px-5 mt-3 bg-primary text-white font-medium duration-200 rounded-md w-full py-3 uppercase hover:brightness-110`}>
+                                    Call Us
+                                </button>
+                            </li>
                         </ul>
                     </nav>
-                    <div className="flex gap-3 w-full justify-center">
+                    <div className="flex justify-center gap-3 w-full">
                         <div className="p-3 bg-cyan-800 bg-opacity-80 text-xl text-white rounded-full cursor-pointer hover:brightness-110 duration-300">
                             <FaInstagram />
                         </div>
